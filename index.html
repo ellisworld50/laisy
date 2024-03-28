@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Laisy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Laisy</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="artiste.html">Artists</a></li>
+                    <li><a href="playlist.html">Playlist</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li> <!-- New Playlist Button -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+            </div>
+            <!-- Add more tracks here -->
+        </div>
+    </section>
+    <div class="featured-music-slider">
+        <div class="slide" style="background-image: url('aespa.webp');">
+            <h3>aespa</h3>
+        </div>
+        <div class="slide" style="background-image: url('kanye-west-chicago-event.webp');">
+            <h3>Kanye West and Ty Dolla $ign</h3>
+        </div>
+        <div class="slide" style="background-image: url('we\ don\'t\ trust\ you.webp');">
+            <h3>Future and Metro Booming</h3>
+        </div>
+        <div class="slide" style="background-image: url('ye.webp');">
+            <h3>Kanye West and Ty Dolla $ign</h3>
+        </div>
+        <div class="slide" style="background-image: url('donny.png');">
+            <h3>Don Toliver</h3>
+        </div>
+        <div class="slide" style="background-image: url('ariana-grande-eternal-sunshine-album-yes-and.jpg');">
+            <h3>Ariana Grande</h3>
+        <!-- Add more slides here -->
+    </div>
+    <div class="slide" style="background-image: url('Cochise-YOSHIMITSU.jpg');">
+        <h3>Cochise</h3>
+    <!-- Add more slides here -->
+</div>
+<div class="slide" style="background-image: url('lolo.webp');">
+    <h3>Lolo Zouaï</h3>
+<!-- Add more slides here -->
+</div>
+
+    
+                
+            </div>
+            <!-- Add more tracks here -->
+        </div>
+    </section>
+    <header class="subheader">
+        <div class="container">
+            <h2>New Releases</h2>
+        </div>
+    </header>
+    
+        <section class="album-grid container">
+            <div class="album">
+                <img src="Eternal_Sunshine.png" alt="Album 1">
+                <h3>Eternal Sunshine</h3>
+                <p>Ariana Grande</p>
+            </div>
+            <div class="album">
+                <img src="Future_and_Metro_Boomin_-_We_Don't_Trust_You.png" alt="Album 2">
+                <h3>We Don't Trust You</h3>
+                <p>Future and Metro Booming</p>
+            </div>
+            <div class="album">
+                <img src="Tyla_album.jpg" alt="Album 2">
+                <h3>Tyla</h3>
+                <p>Tyla</p>
+            </div><div class="album">
+                <img src="cardi.jpeg" alt="Album 2">
+                <h3>Like What</h3>
+                <p>Cardi B</p>
+            </div><div class="album">
+                <img src="Flo_Milli_-_Fine_Ho,_Stay.png" alt="Album 2">
+                <h3>Never Lose Me</h3>
+                <p>Flo Milli, SZA and Cardi B</p>
+            </div><div class="album">
+                <img src="Kali_Uchis_Orquídeas.png" alt="Album 2">
+                <h3>Orquídeas</h3>
+                <p>Kali Uchis</p>
+            </div><div class="album">
+                <img src="Yeat_-_2093.png" alt="Album 2">
+                <h3>2093</h3>
+                <p>Yeat</p>
+            </div><div class="album">
+                <img src="ggeked.jpeg" alt="Album 2">
+                <h3>Geeked</h3>
+                <p>Cochise</p>
+            </div><div class="album">
+                <img src="rott.jpg" alt="Album 2">
+                <h3>Regret Of The Times</h3>
+                <p>aespa</p>
+            </div><div class="album">
+                <img src="Vultures.png" alt="Album 2">
+                <h3>Vultures 1</h3>
+                <p>¥$ (Kanye West and Ty Dolla Sign)</p>
+            </div><div class="album">
+                <img src="bandit0.jpg" alt="Album 2">
+                <h3>Bandit</h3>
+                <p>Don Toliver</p>
+            </div><div class="album">
+                <img src="AmericanDream.jpeg" alt="Album 2">
+                <h3>American Dream</h3>
+                <p>21 Savage</p>
+            </div><div class="album">
+                <img src="yoshimitsu.jpg" alt="Album 2">
+                <h3>Yoshimitsu</h3>
+                <p>Cochise</p>
+            </div><div class="album">
+                <img src="mute.jpg" alt="Album 2">
+                <h3>mute</h3>
+                <p>Lolo Zouaï</p>
+            </div><div class="album">
+                <img src="deepinthe water.jpg" alt="Album 2">
+                <h3>Deep in the Water</h3>
+                <p>Don Toliver</p>
+            </div><div class="album">
+                <img src="nemzzz.jpg" alt="Album 2">
+                <h3>IT'S US</h3>
+                <p>Nemzzz ft Lil Yatchy</p>
+           
+    
+   
+    <script>
+       const slider = document.querySelector('.featured-music-slider');
+const slides = document.querySelectorAll('.slide');
+const slideWidth = slides[0].offsetWidth; // Get width of each slide
+let currentIndex = 0;
+
+function scrollToNextSlide() {
+    if (currentIndex === slides.length - 1) {
+        currentIndex = 0; // Reset to the first slide when reaching the end
+    } else {
+        currentIndex++;
+    }
+    slider.scrollTo({
+        left: slideWidth * currentIndex,
+        behavior: 'smooth'
+    });
+}
+
+setInterval(scrollToNextSlide, 3000); // Auto-scroll every 3 seconds (adjust as needed)
+
+
+    </script>
+</body>
+</html>

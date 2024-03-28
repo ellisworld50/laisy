@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 200%;
+}
+.featured-music-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    height: 600px; /* Set desired height for the slider */
+}
+
+.slide {
+    flex: 0 0 100vw; /* Set width to viewport width */
+    background-size: cover; /* Ensure background image covers entire slide */
+    background-position: center; /* Center background image */
+    scroll-snap-align: start;
+    color: #fff; /* Set text color */
+    text-align: center; /* Center text */
+}
+
+.slide h3 {
+    margin-top: 10%;
+    font-size: 24px;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    min-height: 100vh;
+}
+
+.subheader {
+    background-color: #f2f2f2; /* Adjust background color */
+    color: #333; /* Adjust text color */
+    text-align: center;
+    padding: 20px 0; /* Adjust padding */
+    margin-bottom: 20px; /* Increase bottom margin */
+}
+.subheader h2 {
+    margin: 0;
+    font-size: 24px; /* Adjust font size */
+    color: #333; /* Adjust text color */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden; /* Prevent content from overflowing */
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    float: left;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section.featured {
+    background: #f4f4f4;
+    padding: 50px 0;
+}
+
+
+.featured h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.track {
+    margin-bottom: 20px;
+}
+section#about {
+    flex: 1; /* Allow the about section to grow to fill the remaining space */
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+#about h2 {
+    margin-bottom: 20px; /* Add space between h2 and content */
+}
+
+.about-content {
+    text-align: center; /* Center text content */
+}
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.album {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.album h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.album-link {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.album p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666; /* Adjust text color */
+}
+
+.socials-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.follow-us {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.socials-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+}
+
+.socials-list li {
+    margin: 0 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.socials-list li:last-child {
+    margin-right: 0;
+}
+
+.socials-list .social-icon {
+    font-size: 60px; /* Increase icon size */
+    color: #333;
+    text-decoration: none;
+}
+
+.socials-list .social-icon:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.ourplaylist{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    overflow-y: auto; /* Make the footer scrollable */
+    max-height: 200px; /* Set a maximum height for the footer */
+    margin-top: auto;
+}
